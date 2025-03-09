@@ -33,6 +33,6 @@ function help {
   printf "\nExtended help:\n  Each task has comments for general usage\n"
 }
 
-# details about this script: https://www.juliusunscripted.com/bash-script-with-env-file-variables-and-commands/
+# details about this script: https://www.juliusunscripted.com/posts/bash-script-with-env-file-variables-and-commands/
 TIMEFORMAT=$'\nTask completed in %3lR'
 time "${@:-help}"
