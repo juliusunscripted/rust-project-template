@@ -23,3 +23,7 @@ Cargo.lock
 # Added by cargo
 
 /target
+
+
+# ignore .env file with environment variables
+.env

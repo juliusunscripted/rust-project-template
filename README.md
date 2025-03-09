@@ -23,6 +23,22 @@ You can use this template to start a new rust project.
 #### Adjust log levels per module
 
 - set the environment variable `RUST_LOG` to configure log levels per module
+
+##### Set env var inline
+
+```bash
+RUST_LOG="warn,rust_project_template::example_module::example_submodule=debug" cargo run
+```
+
+##### Use .env file with bash script
+
+> [details about ctl.sh script](https://www.juliusunscripted.com/bash-script-with-env-file-variables-and-commands/)
+
+- create a file called `.env` in the root dir of the repo
 	```bash
-	RUST_LOG="warn,rust_project_template::example_module::example_submodule=debug" cargo run
+	RUST_LOG="warn,rust_project_template::example_module::example_submodule=debug"
+	```
+- run you app with the following command
+	```bash
+	./ctl.sh cargo:run
 	```
