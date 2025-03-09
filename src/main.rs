@@ -1,3 +1,5 @@
+mod example_module;
+
 use log;
 use std::env;
 
@@ -19,4 +21,6 @@ fn main() {
         log::info!(rust_log; "initialized logger with custom  module level configuration (set via environment variable 'RUST_LOG'")
     }
     println!("Hello, world!");
+
+    example_module::example_submodule::hi();
 }
