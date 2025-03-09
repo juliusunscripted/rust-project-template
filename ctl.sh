@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
-# check for .env file first
+# check if .env file exists
 FILE=".env"
 if [ -f "$FILE" ]; then
+	echo "Found file: '${FILE}'. Will configure environment variables."
   set -o allexport; source .env; set +o allexport
 fi
 
@@ -18,7 +19,7 @@ function cargo:build:dev {
   cargo build
 }
 
-# ./ctl.sh cargo:build:dev (build your app with release profile)
+# ./ctl.sh cargo:build:release (build your app with release profile)
 function cargo:build:release {
   cargo build --release
 }
