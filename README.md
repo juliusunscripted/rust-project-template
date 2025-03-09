@@ -11,7 +11,7 @@ You can use this template to start a new rust project.
 	- in `Cargo.toml`
 - rename `project` variable in `src/main.rs` for log level configuration
 
-### Run it
+### Run your app
 
 #### Basic run command
 
