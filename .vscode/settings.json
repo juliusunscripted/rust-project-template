@@ -1,0 +1,19 @@
+{
+    "files.trimFinalNewlines": true,
+    "files.insertFinalNewline": true,
+    "[rust]": {
+      "editor.detectIndentation": false,
+      "editor.insertSpaces": true,
+      "editor.tabSize": 4
+    },
+    "[toml]": {
+      "editor.detectIndentation": false,
+      "editor.insertSpaces": true,
+      "editor.tabSize": 4
+    },
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": false,
+    "rust-analyzer.inlayHints.typeHints.enable": false,
+    "rust-analyzer.inlayHints.parameterHints.enable": false
+  }
