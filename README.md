@@ -2,6 +2,33 @@
 You can use this template to start a new rust project.
 
 
+## Prerequisites
+
+### Install rust
+
+#### Via rustup
+
+- [via rustup](https://www.rust-lang.org/tools/install)
+
+#### Via nix flake
+
+- ([install nix and open nix flake development shell](https://www.juliusunscripted.com/posts/configure-nix-flake-development-shell/))
+- the git repo contains a `flake.nix` configuration
+- you can open a dev shell via
+	```bash
+	nix develop
+	```
+- you can open vscode from inside the nix dev shell via
+	- option 1:
+		```bash
+		nix develop --command code .
+		```
+	- option 2:
+		```bash
+		./ctl.sh nix:vscode
+		```
+
+
 ## Getting started
 
 ### Create your project

@@ -24,6 +24,11 @@ function cargo:build:release {
   cargo build --release
 }
 
+# ./ctl.sh nix:vscode (open vscode from inside nix flake dev shell with rust)
+function nix:vscode {
+  nix develop --command code .
+}
+
 function help {
   printf "%s <task> [args]\n\nTasks:\n" "${0}"
 
