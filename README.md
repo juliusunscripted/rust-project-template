@@ -1,6 +1,6 @@
 # rust-project-template
-You can use this template to start a new rust project.
 
+You can use this template to start a new rust project.
 
 ## Prerequisites
 
@@ -46,6 +46,17 @@ You can use this template to start a new rust project.
 	```bash
 	cargo run
 	```
+
+- this template use a rust crate called *clap* for cli development
+- use cli arguments after two dashes `--` when running the program via `cargo`
+	```bash
+	# cli help
+	cargo run -- -h
+
+	# example run
+	cargo run -- --name Julius --count 3
+	```
+
 
 #### Adjust log levels per module
 
