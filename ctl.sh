@@ -11,7 +11,11 @@ set -eo pipefail
 
 # ./ctl.sh cargo:run (run your app while developing)
 function cargo:run {
-  cargo run
+	# # simple cargo run for basic rust programs
+  # cargo run
+	
+	# custom cli arguments after double dash
+  cargo run -- --name Julius --count 3
 }
 
 # ./ctl.sh cargo:build:dev (build your app with dev profile)
